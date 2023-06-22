@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+    <title>하이퍼 스탯 계산기</title>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-two-thirds">
+                    <section class="hero is-medium" style="background-color: #FCB358;">
+                        <div class="hero-body">
+                            <p class="title">
+                                하이퍼 스탯 시뮬레이션 계산기
+                            </p>
+                            <p class="subtitle">
+                                효율 계산기가 아닌 시뮬레이션용 계산기입니다.
+                            </p>
+                        </div>
+                    </section>
+
+                    <div class="columns">
+
+                        <div class="column">
+                            <div class="columns">
+                                <div class="column">
+                                    <div class="box">
+                                        <label class="label">레벨</label>
+                                        <input id="inputBox" class="input" type="number" placeholder="값을 입력하세요">
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="box">
+                                        <label class="label">하이퍼 포인트</label>
+                                        <div id="hyperPointBase" class="content"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="table-container">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>스탯</th>
+                                            <th>레벨</th>
+                                            <th>증가한 스탯</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr class="is-selected" style="background-color: #FCB358">
+                                            <th>남은 포인트</th>
+                                            <th id="remain"></th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>STR</td>
+                                            <td>
+                                                <input id="numberInput1" class="input" type="number" value="0">
+                                            </td>
+                                            <td id="statIncrease1"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>DEX</td>
+                                            <td>
+                                                <input id="numberInput2" class="input" type="number" value="0">
+                                            </td>
+                                            <td id="statIncrease2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>INT</td>
+                                            <td>
+                                                <input id="numberInput3" class="input" type="number" value="0">
+                                            </td>
+                                            <td id="statIncrease3"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>LUK</td>
+                                            <td>
+                                                <input id="numberInput4" class="input" type="number" value="0">
+                                            </td>
+                                            <td id="statIncrease4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>HP</td>
+                                            <td>
+                                                <input id="numberInput5" class="input" type="number" value="0">
+                                            </td>
+                                            <td id="statIncrease5"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>MP</td>
+                                            <td>
+                                                <input id="numberInput6" class="input" type="number" value="0">
+                                            </td>
+                                            <td id="statIncrease6"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>DF/TF</td>
+                                            <td>
+                                                <input id="numberInput7" class="input" type="number" value="0">
+                                            </td>
+                                            <td id="statIncrease7"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>크리티컬 발동</td>
+                                            <td>
+                                                <input id="numberInput8" class="input" type="number" value="0">
+                                            </td>
+                                            <td id="statIncrease8"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>크리 데미지</td>
+                                            <td>
+                                                <input id="numberInput9" class="input" type="number" value="0">
+                                            </td>
+                                            <td id="statIncrease9"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>방어율 무시</td>
+                                            <td>
+                                                <input id="numberInput10" class="input" type="number" value="0">
+                                            </td>
+                                            <td id="statIncrease10"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>데미지</td>
+                                            <td>
+                                                <input id="numberInput11" class="input" type="number" value="0">
+                                            </td>
+                                            <td id="statIncrease11"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>보스 데미지</td>
+                                            <td>
+                                                <input id="numberInput12" class="input" type="number" value="0">
+                                            </td>
+                                            <td id="statIncrease12"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>일반 데미지</td>
+                                            <td>
+                                                <input id="numberInput13" class="input" type="number" value="0">
+                                            </td>
+                                            <td id="statIncrease13"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>상태이상내성</td>
+                                            <td>
+                                                <input id="numberInput14" class="input" type="number" value="0">
+                                            </td>
+                                            <td id="statIncrease14"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>공격력/마력</td>
+                                            <td>
+                                                <input id="numberInput15" class="input" type="number" value="0">
+                                            </td>
+                                            <td id="statIncrease15"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>획득 경험치</td>
+                                            <td>
+                                                <input id="numberInput16" class="input" type="number" value="0">
+                                            </td>
+                                            <td id="statIncrease16"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>아케인 포스</td>
+                                            <td>
+                                                <input id="numberInput17" class="input" type="number" value="0">
+                                            </td>
+                                            <td id="statIncrease17"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <footer class="footer">
+                        <div class="content has-text-centered">
+                            <p>
+                                <strong>Hyper Stat Calc Simulator</strong> made by Deta <br>
+                                contact: mystrange01@gmail.com
+                            </p>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="main.js" defer></script>
+</body>
+
+</html>
