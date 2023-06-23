@@ -234,7 +234,7 @@ inputIds.forEach(function (inputId, index) {
     }
 });
 console.log("             ╭ ◜◝ ͡  ◜◝ ͡   ◜◝ ╮");
-console.log("               윌에라 하면 좋겠다.");
+console.log("              제발 쁘띠윌 내주세요.");
 console.log("             ╰ ◟◞ ͜   ◟ ͜   ◟ ◞ ╯");
 console.log("                 O");
 console.log("               .°");
