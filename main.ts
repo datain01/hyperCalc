@@ -213,23 +213,3 @@ inputIds.forEach((inputId, index) => {
     statIncreaseElements.push(statIncreaseElement);
   }
 });
-
-
-
-
-
-
-
-
-         
-
-      
-console.log("             ╭ ◜◝ ͡  ◜◝ ͡   ◜◝ ╮");
-console.log("               윌에라 하면 좋겠다.");
-console.log("             ╰ ◟◞ ͜   ◟ ͜   ◟ ◞ ╯");
-console.log("                 O");
-console.log("               .°");
-
-console.log("    =======      =======");
-console.log("  =          ===         =");
-console.log("    =======      =======");
